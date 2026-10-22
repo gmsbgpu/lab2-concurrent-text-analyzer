@@ -59,7 +59,7 @@ public class Main {
     private static Map<String, WordAnalyzer> createAnalyzers() {
         Map<String, WordAnalyzer> m = new LinkedHashMap<>();
         m.put("sequential", new SequentialAnalyzer());
-        m.put("hashmap", new SequentialAnalyzer()); // псевдоним: тот же код
+        m.put("hashmap", new HashMapAnalyzer());
         m.put("synchronized-map", new SynchronizedMapAnalyzer());
         m.put("concurrent-get-put", new ConcurrentGetPutAnalyzer());
         m.put("concurrent-merge", new ConcurrentMergeAnalyzer());
